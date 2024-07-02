@@ -1,0 +1,26 @@
+{
+    "name": "chatGPT extension",
+    "version": "1.0.0",
+    "description": "Extension to have chat with LLM without leaving the webpage you work on",
+    "icons": {
+        "16": "assets/icons/chatgpt-96.png",
+        "48": "assets/icons/chatgpt-96.png",
+        "128": "assets/icons/chatgpt-96.png"
+    },
+    "host_permissions": [
+        "https://api.openai.com/v1/completions"
+    ],
+    "permissions": [
+        "storage",
+        "downloads",
+        "sidePanel",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "side_panel": {
+        "default_path": "sidePanel.html"
+    },
+    "manifest_version": 3
+}
